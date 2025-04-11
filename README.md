@@ -1,4 +1,4 @@
-**"Combating the Vanishing Gradient Problem in Deep CNNs: A Study of VGG38 with Batch Normalization and Residual Connections"**
+# Combating the Vanishing Gradient Problem in Deep CNNs: A Study of VGG38 with Batch Normalization and Residual Connections
 
 ## Overview
 
