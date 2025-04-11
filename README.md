@@ -1,4 +1,4 @@
-# Combating the Vanishing Gradient Problem in Deep CNNs: A Study of VGG38 with Batch Normalization and Residual Connections
+# Combating VGP in Deep CNNs: A Study of VGG38 with Batch Normalization and Residual Connections
 
 ## Overview
 
@@ -8,14 +8,14 @@ Training deep convolutional neural networks often leads to vanishing gradients, 
 - Implements two common solutions to VGP: **Batch Normalization (BN)** and **Residual Connections (RC)**.
 - Evaluates the performance impact of BN, RC, and their combination in solving the VGP in the deeper architecture.
 
-## 🧠 Key Findings
+## Key Findings
 
 - VGG38 without BN or RC fails to train effectively (accuracy ≈ 0.01) due to VGP.
 - BN improves training stability and allows higher learning rates.
 - RC allows better gradient flow and outperforms BN individually.
 - Combining **BN + RC** provides the best performance, achieving ~59% accuracy on the test set.
 
-## 📊 Results Summary
+## Results Summary
 
 | Model             | Learning Rate | Val Loss | Val Accuracy |
 |------------------|---------------|----------|--------------|
@@ -26,9 +26,10 @@ Training deep convolutional neural networks often leads to vanishing gradients, 
 | VGG38 + BN + RC  | 1e-2          | 1.58     | **59.16%**    |
 
 
-## 🧪 How to Run
+## How to Run
+Run any of the predefined training scripts under `pytorch_experiments\run_sh` including run_vgg_38_default.sh, vgg_38_bn.sh, bash vgg_38_bn_rc.sh. For manual configuration use
 
-# Train VGG38 with BN + RC
-
-# Visualize gradient flow
+```bash
+python pytorch_experiments/train_evaluate_image_classification_system.py --experiment_name YOUR_EXP_NAME --args**
+```
 
